@@ -187,4 +187,3 @@ if (document.getElementById("saida-form")) {
     window.location.href = "selecao.html";
   });
 }
-
