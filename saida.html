@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro de saída</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="logo">
+    <a href="index.html">
+      <img class="logo__bcseventos" src="LOGO-BCS.svg" alt="logo bcs">
+    </a>  
+  </header>
+  
+  <div class="conteudo_cadastro">
+    <form id="saida-form">
+      <h2 class="padrao__titulo">Registro de Saída</h2>
+      <input type="text" id="destino" placeholder="Destino" required />
+      <input type="text" id="responsavel" placeholder="Responsável" required />
+      <input type="date" id="data-saida" required />
+      <button type="submit">Avançar para seleção</button>
+    </form>
+  </div>
+
+  <footer class="menu">
+    <hr>
+    <nav class="menu-links">
+      <a href="grupos.html">Grupo</a>
+      <a href="novo_equipamento.html">Cadastrar</a>
+      <a href="saida.html">Saída</a>
+      <a href="index.html">Fechar</a>
+    </nav>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
+  <script src="saida.js"></script>
+
+</body>
+</html>

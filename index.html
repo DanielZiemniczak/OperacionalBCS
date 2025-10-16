@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="conteudo-login">
+    <form id="auth-form">
+      <img class="icone-usuario" src="icone_bloqueio.png">
+      <h1 class="padrao__titulo">OPERACIONAL BCS</h1>
+      <input class="login_entrada" type="password" id="senha" placeholder="Digite a senha" required />
+      <button type="submit">Entrar</button>
+    </form>
+  </div>
+  <footer class="rodape">
+    <a href="index.html"><img class="logo-login" src="LOGO-BCS-centralizado.svg" alt="logo bcs">
+    </a></footer>
+  <script>
+    document.getElementById("auth-form").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const senha = document.getElementById("senha").value;
+      if (senha == "bcs*97" || "123")
+      {window.location.href = "grupos.html";
+      } 
+      else {
+        alert("Senha incorreta");
+      }
+    });
+  </script>
+</body>
+</html>
