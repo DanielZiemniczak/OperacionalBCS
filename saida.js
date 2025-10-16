@@ -160,7 +160,10 @@ if (window.location.pathname.includes("selecao.html")) {
     margin: { left: 20, right: 20 }
   });
 
-  doc.save("saida-equipamentos.pdf");
+  const nomeArquivo = `saida-${dados.responsavel}-${dados.destino}-${dados.data}.pdf`
+  .replace(/[^\w\-]+/g, "_"); // substitui caracteres inválidos por "_"
+doc.save(nomeArquivo);
+
 }
 }
 
@@ -184,3 +187,4 @@ if (document.getElementById("saida-form")) {
     window.location.href = "selecao.html";
   });
 }
+
