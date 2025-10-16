@@ -110,7 +110,7 @@ if (window.location.pathname.includes("selecao.html")) {
   // Título principal
   doc.setFontSize(16);
   doc.setFont("helvetica", "bold");
-  doc.text("Resumo Saída", 105, 20,);
+  doc.text("Resumo Saída", 20, 20,);
 
   // Informações gerais
   doc.setFontSize(12);
@@ -187,3 +187,4 @@ if (document.getElementById("saida-form")) {
     window.location.href = "selecao.html";
   });
 }
+
