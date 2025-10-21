@@ -214,8 +214,6 @@
   to { transform: rotate(360deg); }
 }
 
-
-
 /*responsividade para celulares*/
 @media (max-width: 768px) {
   .conteudo-login {
