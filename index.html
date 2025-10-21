@@ -2,32 +2,59 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
-  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="login.css" />
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
+
   <div class="conteudo-login">
     <form id="auth-form">
-      <img class="icone-usuario" src="icone_bloqueio.png">
+      <img class="icone-usuario" src="icone_bloqueio.png" alt="Ícone de usuário">
       <h1 class="padrao__titulo">OPERACIONAL BCS</h1>
-      <input class="login_entrada" type="password" id="senha" placeholder="Digite a senha" required />
+
+      <!-- Campo de usuário -->
+      <input class="login_entrada" type="text" id="usuario" name="usuario" placeholder="Digite o usuário" required />
+
+      <!-- Campo de senha -->
+      <input class="login_entrada" type="password" id="senha" name="senha" placeholder="Digite a senha" required />
+
+      <!-- Botão de login -->
       <button type="submit">Entrar</button>
+
+      <!-- Link discreto para criar novo usuário -->
+      <a href="#" id="create-user-link">Criar novo usuário</a>
+
+      <!-- Logo no rodapé -->
+      <a href="index.html">
+        <img class="rodape" src="LOGO-BCS-centralizado.svg" alt="logo bcs">
+      </a>
     </form>
   </div>
-  <footer class="rodape">
-    <a href="index.html"><img class="logo-login" src="LOGO-BCS-centralizado.svg" alt="logo bcs">
-    </a></footer>
-  <script>
-    document.getElementById("auth-form").addEventListener("submit", function(e) {
-      e.preventDefault();
-      const senha = document.getElementById("senha").value;
-      if (senha == "bcs*97" || "123")
-      {window.location.href = "grupos.html";
-      } 
-      else {
-        alert("Senha incorreta");
-      }
-    });
-  </script>
+
+ <!-- Popup de cadastro -->
+<div id="popup-cadastro" class="popup-cadastro">
+  <div class="popup-conteudo">
+    <span class="popup-fechar" id="fechar-popup">&times;</span>
+    <h2>Criar novo usuário</h2>
+    <input type="text" id="novo-usuario" placeholder="Novo usuário" required />
+    <input type="password" id="nova-senha" placeholder="Nova senha" required />
+    <button id="btn-cadastrar">Cadastrar</button>
+  </div>
+</div>
+<!-- Animação de carregamento -->
+<div id="loading-overlay" class="loading-overlay">
+  <div class="spinner"></div>
+</div>
+
+  <footer class="menu-login">
+    <a href="versao.html">Versão 1.0.1</a>
+  </footer>
+
+  <!-- Script externo -->
+  <script src="login.js"></script>
 </body>
 </html>
