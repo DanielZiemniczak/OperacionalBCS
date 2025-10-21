@@ -49,56 +49,6 @@ hr {
   transition: transform 0.8s ease;
 
 }
-/* TELA DE LOGIN*/
-.conteudo-login{
-  height: 85vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.padrao__titulo{
-  font-size: var(--font-titulos-grande);
-  padding: 2% 0% 15%;
-}
-#auth-form {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  padding: 200px 30px 200px;
-  border-radius: 80px;
-  border-style: solid;
-  border-color: var(--midnight-nav);
-  gap: 70px;
-  width: 80%;
-}
-#auth-form input {
-  width: 83.5%;
-  padding: 20px;
-  font-size: 40px;
-  border: none;
-  outline: none;
-  border-bottom: solid var(--eclipse-black);
-}
-#auth-form button {
-  width:90%;
-  padding: 20px;
-  font-size: 60px;
-  background-color: #0a122a;
-  opacity: 80%;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  transition: background-color 0.2s ease;
-  cursor: pointer;
-}
-#auth-form button:hover {
-  background-color:var(--eclipse-black);
-}
-.rodape{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 /* ESTILO DO BLOCO DOS GRUPOS*/
 .conteudo{
